@@ -62,4 +62,4 @@ grid on;
 title('Pressure around elliptical inclusion');
 xlabel('\theta');
 ylabel('Pressure');
-legend('t=1','t=2','t=10','t=20', -1);
+legend({'t=1','t=2','t=10','t=20'}, 'Location', 'NorthEastOutside');

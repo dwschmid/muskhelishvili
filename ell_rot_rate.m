@@ -41,13 +41,13 @@ for m=1:length(mc)
                    (mc(m).*t.^2+mc(m)+2.*t).*cos(2.*alpha)-1./2).*gr ...
                    -1./2.*(2.*mc(m).*t.^2-2.*t.^2-2.*mc(m)+2)./ ...
                    (mc(m).*t.^2+mc(m)+2.*t).*sin(2.*alpha).*er;
-
     
     %PLOT
     plot(rot_rate, alpha/pi*180, Styles{m});
     hold on;
 end
 grid on;
+axis tight;
 xlabel('Rotation Rate');
 ylabel('\alpha');
-legend('\mu_c/\mu_m=\infty','\mu_c/\mu_m=1','\mu_c/\mu_m=1/10','\mu_c/\mu_m=1/100', -1)
+legend({'\mu_c/\mu_m=\infty','\mu_c/\mu_m=1','\mu_c/\mu_m=1/10','\mu_c/\mu_m=1/100'}, 'Location', 'NorthEastOutside')

@@ -47,5 +47,5 @@ set(gca, 'XTick', [0:45:360]);
 xlabel('\theta');
 ylabel('p/(\mu_m\gamma)', 'Rotation', 0);
 title('Pressure Around Cylindrical Inclusion')
-legend('\mu_c/\mu_m=1','\mu_c/\mu_m=2','\mu_c/\mu_m=10','\mu_c/\mu_m=\infty', -1)
+legend({'\mu_c/\mu_m=1','\mu_c/\mu_m=2','\mu_c/\mu_m=10','\mu_c/\mu_m=\infty'}, 'location', 'NorthEastOutside');
 	 
